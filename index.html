@@ -26,12 +26,15 @@
       <div class="col-lg-4 shadow-sm p-5 listBox">
         <h1 class="mb-3">🗒 My Todo List</h1>
         <div id="todosContainer" v-clock>
-          <div v-cloak v-for="todo in todos">
+          <div class="todos" v-cloak v-for="todo in todos">
             <input type="checkbox" v-bind:checked=todo.done>
             {{ todo.title }}
+            <i class="fa-solid fa-trash" v-on:click="deleteTodo"></i>
           </div>
-          <input class="btn-write" v-model="newTodo" placeholder="Add something" />
-          <button class="btn-submit" v-on:click="addTodo">Add</button>
+          <div class="submit-container">
+            <input class="btn-write" v-model="newTodo" placeholder="What's next?" />
+            <button class="btn-submit" v-on:click="addTodo">Add</button>
+          </div>
         </div>
       </div>
     </div>

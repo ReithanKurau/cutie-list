@@ -1,4 +1,3 @@
-/* Your customized CSS goes here */
 @import url('https://fonts.googleapis.com/css2?family=Delius&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 [v-cloak] {
@@ -16,25 +15,37 @@
 .listBox {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100px;
   font-style: normal;
   background-color: #FFF8DE;
   border-radius: 20%;
   border-style: solid;
   border-color: #CB9DF0;
   width: 400px;
+  padding: 3px;
+}
+
+.todos {
+  padding: 7px;
+}
+
+.submit-container{
+  display:flex;
+}
+
+.btn-write {
+  background-color: #F8FAFC;
+  margin-top: 10%;
+  padding: 5px;
+  margin-right: 3px;
+  color: black;
 }
 
 .btn-submit {
   color: #3B1C32;
-  background-color: #C5D3E8;
+  background-color: #F8FAFC;
   width: 100px;
-  margin-top: 9px;
+  margin-top: 10%;
   text-align: center;
   border-radius: 5%;
-}
-
-.btn-write {
-  background-color: #C5D3E8;
-  margin-top: 9px;
+  padding: 5px;
 }
