@@ -29,7 +29,7 @@
           <div class="todos" v-cloak v-for="todo in todos">
             <input type="checkbox" v-bind:checked=todo.done>
             {{ todo.title }}
-            <i class="fa-solid fa-trash" v-on:click="deleteTodo"></i>
+            <i class="fa-solid fa-trash" v-on:click="deleteTodo(index)"></i>
           </div>
           <div class="submit-container">
             <input class="btn-write" v-model="newTodo" placeholder="What's next?" />
