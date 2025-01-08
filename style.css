@@ -1,0 +1,40 @@
+/* Your customized CSS goes here */
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+[v-cloak] {
+  display: none;
+}
+
+
+.whole-list {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+
+.listBox {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+  background-color: #FFF8DE;
+  border-radius: 20%;
+  border-style: solid;
+  border-color: #CB9DF0;
+  width: 400px;
+}
+
+.btn-submit {
+  color: #3B1C32;
+  background-color: #C5D3E8;
+  width: 100px;
+  margin-top: 9px;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.btn-write {
+  background-color: #C5D3E8;
+  margin-top: 9px;
+}
